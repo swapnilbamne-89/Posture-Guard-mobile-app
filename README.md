@@ -16,8 +16,8 @@
 
 <br />
 
-> **Portfolio project by [Swapnil Aware](https://github.com/swapnilaware)**  
-> Senior AI Product Manager · Aeron Systems · Pune, India  
+> **Portfolio project by [Swapnil Bamne](https://github.com/swapnilbamne-89))**  
+
 > Closing the product gap between IMU posture research and a shippable consumer iOS app.
 
 </div>
@@ -28,7 +28,7 @@
 
 Posture correction apps exist — but they rely on cameras, wearables, or manual check-ins. **No mainstream phone app uses `CMDeviceMotion` drift detection combined with `CHHapticEngine` escalation to alert you without ever looking at a screen.**
 
-Most back and neck strain from seated work accumulates silently over 20–30 minutes. PostureGuard detects it while it's happening and tells your body — not your eyes.
+Most back and neck strain from seated work accumulates silently over 20–30 minutes. PostureGuard detects it as it happens and tells your body — not your eyes.
 
 ---
 
@@ -43,7 +43,7 @@ Most back and neck strain from seated work accumulates silently over 20–30 min
 | **Grace period logic** | Timer decays at 2× rate on correction — prevents false resets from brief posture fixes |
 | **Live stick-figure** | Canvas-rendered silhouette leans with real-time pitch and roll — the signature visual |
 | **DriftArc gauge** | Sweeping arc shows drift vs 8° threshold at a glance |
-| **Session reporting** | Good-posture donut, drift timeline, alert breakdown, AI coaching note |
+| **Session reporting** | Good-posture doughnut, drift timeline, alert breakdown, AI coaching note |
 | **AI coaching** | Claude claude-sonnet-4-6 generates a personalised workplace wellness note after each session |
 | **Battery-conscious** | `CMDeviceMotion` at 50 Hz — ~60% lower CPU than 200 Hz, adequate for slow postural drift |
 | **On-device only** | All session data stored locally via `UserDefaults`; no accounts, no cloud |
@@ -151,7 +151,7 @@ Postural drift is slow — it unfolds over minutes. 50 Hz provides ample tempora
 | **Stage 3** | 20 min continuous drift | Triple burst, repeats every 8s | 3× events at 0ms / 140ms / 280ms, intensity 0.90, sharpness 0.75 |
 | **Reset** | Posture corrected | Stage 3 repeat timer cancelled | `stopStage3()` called immediately on stage transition to `.none` |
 
-Stage 3 uses a dedicated `Timer` (not a `CHHapticPattern` loop) so it can be cancelled cleanly mid-cycle the moment posture is corrected.
+Stage 3 uses a dedicated `Timer` (not a `CHHapticPattern` loop) so it can be cancelled cleanly mid-cycle as soon as posture is corrected.
 
 ---
 
@@ -233,7 +233,7 @@ The key is read from `Info.plist` via `$(ANTHROPIC_API_KEY)` build variable — 
 
 ## ⚠️ Disclaimer
 
-**PostureGuard is a portfolio concept and is not a medical device.** It has not been reviewed or approved by any regulatory authority. Posture alerts are for wellness awareness only — not clinical diagnosis or treatment. All data stays on device. No telemetry is collected.
+**PostureGuard is a portfolio concept and is not a medical device.** It has not been reviewed or approved by any regulatory authority. Posture alerts are for wellness awareness only — not clinical diagnosis or treatment. All data stays on the device. No telemetry is collected.
 
 ---
 
@@ -257,19 +257,6 @@ The key is read from `Info.plist` via `$(ANTHROPIC_API_KEY)` build variable — 
 | Ergonomics research: trunk deviation | 8° lateral trunk deviation in seated workers correlates with elevated musculoskeletal risk |
 | Workplace wellness guidelines | 10-minute and 20-minute seated intervals are standard intervention thresholds |
 | Product gap identified | No consumer iOS app closes the CMDeviceMotion → CHHapticEngine feedback loop for posture |
-
----
-
-## 👨‍💻 About the Author
-
-**Swapnil Aware** — Senior AI Product Manager & AI Documentation Lead at Aeron Systems, Pune, India.
-
-13+ years across Defense & Aerospace, IoT, Cybersecurity, and SaaS. CSPO certified (2025). B.Tech Aeronautical Engineering + Diploma in Technical Communication.
-
-This is one of a series of GitHub portfolio projects exploring undeveloped mobile sensor fusion concepts — each grounded in published research, each delivered as a complete Xcode project with React prototype.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/swapnilaware)
-[![GitHub](https://img.shields.io/badge/GitHub-Portfolio-181717?style=flat&logo=github)](https://github.com/swapnilaware)
 
 ---
 
