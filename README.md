@@ -190,7 +190,7 @@ Session data:
 
 ```bash
 # 1. Clone
-git clone https://github.com/swapnilaware/posture-guard-ios.git
+git clone https://github.com/swapnilbamne-89/Posture-Guard-mobile-app
 cd posture-guard-ios
 
 # 2. Open project
