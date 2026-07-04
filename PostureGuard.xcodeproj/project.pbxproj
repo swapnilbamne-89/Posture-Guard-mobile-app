@@ -1,0 +1,240 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA000001 /* PostureGuardApp.swift in Sources */      = {isa = PBXBuildFile; fileRef = CB000001; };
+		CA000002 /* ContentView.swift in Sources */          = {isa = PBXBuildFile; fileRef = CB000002; };
+		CA000003 /* Models.swift in Sources */               = {isa = PBXBuildFile; fileRef = CB000003; };
+		CA000004 /* PostureGyroManager.swift in Sources */   = {isa = PBXBuildFile; fileRef = CB000004; };
+		CA000005 /* HapticAlertEngine.swift in Sources */    = {isa = PBXBuildFile; fileRef = CB000005; };
+		CA000006 /* PostureAnalyser.swift in Sources */      = {isa = PBXBuildFile; fileRef = CB000006; };
+		CA000007 /* AIService.swift in Sources */            = {isa = PBXBuildFile; fileRef = CB000007; };
+		CA000008 /* DesignSystem.swift in Sources */         = {isa = PBXBuildFile; fileRef = CB000008; };
+		CA000009 /* OnboardingView.swift in Sources */       = {isa = PBXBuildFile; fileRef = CB000009; };
+		CA000010 /* CalibrationView.swift in Sources */      = {isa = PBXBuildFile; fileRef = CB000010; };
+		CA000011 /* MonitorView.swift in Sources */          = {isa = PBXBuildFile; fileRef = CB000011; };
+		CA000012 /* AppViews.swift in Sources */             = {isa = PBXBuildFile; fileRef = CB000012; };
+		CA000013 /* Assets.xcassets in Resources */          = {isa = PBXBuildFile; fileRef = CB000013; };
+		CA000014 /* LaunchScreen.storyboard in Resources */  = {isa = PBXBuildFile; fileRef = CB000014; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB000001 /* PostureGuardApp.swift */     = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift;        path = PostureGuardApp.swift;     sourceTree = "<group>"; };
+		CB000002 /* ContentView.swift */         = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift;        path = ContentView.swift;         sourceTree = "<group>"; };
+		CB000003 /* Models.swift */              = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift;        path = Models.swift;              sourceTree = "<group>"; };
+		CB000004 /* PostureGyroManager.swift */  = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift;        path = PostureGyroManager.swift;  sourceTree = "<group>"; };
+		CB000005 /* HapticAlertEngine.swift */   = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift;        path = HapticAlertEngine.swift;   sourceTree = "<group>"; };
+		CB000006 /* PostureAnalyser.swift */     = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift;        path = PostureAnalyser.swift;     sourceTree = "<group>"; };
+		CB000007 /* AIService.swift */           = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift;        path = AIService.swift;           sourceTree = "<group>"; };
+		CB000008 /* DesignSystem.swift */        = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift;        path = DesignSystem.swift;        sourceTree = "<group>"; };
+		CB000009 /* OnboardingView.swift */      = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift;        path = OnboardingView.swift;      sourceTree = "<group>"; };
+		CB000010 /* CalibrationView.swift */     = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift;        path = CalibrationView.swift;     sourceTree = "<group>"; };
+		CB000011 /* MonitorView.swift */         = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift;        path = MonitorView.swift;         sourceTree = "<group>"; };
+		CB000012 /* AppViews.swift */            = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift;        path = AppViews.swift;            sourceTree = "<group>"; };
+		CB000013 /* Assets.xcassets */           = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog;     path = Assets.xcassets;           sourceTree = "<group>"; };
+		CB000014 /* LaunchScreen.storyboard */   = {isa = PBXFileReference; lastKnownFileType = file.storyboard;         path = LaunchScreen.storyboard;   sourceTree = "<group>"; };
+		CB000015 /* Info.plist */                = {isa = PBXFileReference; lastKnownFileType = text.plist.xml;          path = Info.plist;                sourceTree = "<group>"; };
+		CB000016 /* PostureGuard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PostureGuard.entitlements; sourceTree = "<group>"; };
+		CB000099 /* PostureGuard.app */          = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostureGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC000001 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD000000 = { isa = PBXGroup; children = (CD000001, CD000099); sourceTree = "<group>"; };
+		CD000099 /* Products */ = { isa = PBXGroup; children = (CB000099); name = Products; sourceTree = "<group>"; };
+		CD000001 /* PostureGuard */ = {
+			isa = PBXGroup;
+			children = (
+				CB000001, CB000002,
+				CB000015, CB000016,
+				CB000013, CB000014,
+				CD000002, CD000003, CD000004,
+			);
+			path = PostureGuard; sourceTree = "<group>";
+		};
+		CD000002 /* Models */   = { isa = PBXGroup; children = (CB000003); path = Models;   sourceTree = "<group>"; };
+		CD000003 /* Managers */ = { isa = PBXGroup; children = (CB000004, CB000005, CB000006, CB000007); path = Managers; sourceTree = "<group>"; };
+		CD000004 /* Views */    = { isa = PBXGroup; children = (CB000008, CB000009, CB000010, CB000011, CB000012); path = Views; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE000001 /* PostureGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF000003;
+			buildPhases = (CC000000, CC000001, CC000002);
+			buildRules = (); dependencies = ();
+			name = PostureGuard; productName = PostureGuard;
+			productReference = CB000099;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF000000 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540; LastUpgradeCheck = 1540;
+				TargetAttributes = { CE000001 = { CreatedOnToolsVersion = 15.4; }; };
+			};
+			buildConfigurationList = CF000001;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = CD000000; productRefGroup = CD000099;
+			projectDirPath = ""; projectRoot = "";
+			targets = (CE000001);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC000002 = {
+			isa = PBXResourcesBuildPhase; buildActionMask = 2147483647;
+			files = (
+				CA000013 /* Assets.xcassets in Resources */,
+				CA000014 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC000000 = {
+			isa = PBXSourcesBuildPhase; buildActionMask = 2147483647;
+			files = (
+				CA000001, CA000002, CA000003, CA000004,
+				CA000005, CA000006, CA000007, CA000008,
+				CA000009, CA000010, CA000011, CA000012,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF000010 /* Debug-Project */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES; CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES; CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES; CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES; CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES; COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO; GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES; GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0; MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES; SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF000011 /* Release-Project */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES; CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES; CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES; CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES; CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES; COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO; ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17; GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES; GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0; MTL_FAST_MATH = YES; SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF000020 /* Debug-Target */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PostureGuard/PostureGuard.entitlements;
+				CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PostureGuard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.postureguard.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1; ANTHROPIC_API_KEY = "";
+			};
+			name = Debug;
+		};
+		CF000021 /* Release-Target */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PostureGuard/PostureGuard.entitlements;
+				CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PostureGuard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.postureguard.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1; ANTHROPIC_API_KEY = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF000001 = { isa = XCConfigurationList; buildConfigurations = (CF000010, CF000011); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		CF000003 = { isa = XCConfigurationList; buildConfigurations = (CF000020, CF000021); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+
+	};
+	rootObject = CF000000;
+}
