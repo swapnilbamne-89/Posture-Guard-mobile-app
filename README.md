@@ -16,6 +16,9 @@
 
 <br />
 
+<img width="420" height="876" alt="Posture-guard-demo" src="https://github.com/user-attachments/assets/319e80f5-e422-4e47-8812-595841592c62" />
+
+
 > **Portfolio project by [Swapnil Bamne](https://github.com/swapnilbamne-89))**  
 
 > Closing the product gap between IMU posture research and a shippable consumer iOS app.
